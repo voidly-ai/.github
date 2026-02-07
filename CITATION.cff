@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: Voidly Global Censorship Index
+message: "If you use Voidly data in your research, please cite it as below."
+type: dataset
+authors:
+  - name: Voidly Research
+    website: https://voidly.ai
+repository-code: https://github.com/voidly-ai/voidly-public
+url: https://voidly.ai/censorship-index
+abstract: >-
+  Real-time global internet censorship data aggregated from OONI, IODA,
+  Censored Planet, and Voidly probes. Includes live measurements,
+  historical archives, and AI-classified censorship incidents.
+keywords:
+  - censorship
+  - internet freedom
+  - OONI
+  - network interference
+  - human rights
+  - open data
+license: CC-BY-4.0
+date-released: 2026-01-01
