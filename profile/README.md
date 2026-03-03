@@ -3,22 +3,22 @@
 **The Global Censorship Intelligence Network**
 
 [![Status](https://img.shields.io/badge/status-active-success)](https://voidly.ai/status)
-[![Data](https://img.shields.io/badge/measurements-11.7M-blue)](https://voidly.ai/data)
-[![Incidents](https://img.shields.io/badge/incidents-5,356+-orange)](https://voidly.ai/censorship-index)
-[![Countries](https://img.shields.io/badge/countries-119-green)](https://voidly.ai/censorship-index)
-[![Model](https://img.shields.io/badge/AI-99.8%25%20F1-purple)](https://voidly.ai/methodology)
+[![Data](https://img.shields.io/badge/measurements-16M+-blue)](https://voidly.ai/data)
+[![Incidents](https://img.shields.io/badge/incidents-5,700+-orange)](https://voidly.ai/censorship-index)
+[![Countries](https://img.shields.io/badge/countries-126+-green)](https://voidly.ai/censorship-index)
+[![Model](https://img.shields.io/badge/classifier-99.8%25%20F1-purple)](https://voidly.ai/methodology)
 
 ---
 
 ## What is Voidly?
 
-Voidly is a **nonprofit censorship research network** that aggregates, analyzes, and publishes global internet censorship data. We combine measurements from OONI, IODA, Censored Planet, and our own probe network to create the most comprehensive censorship intelligence available.
+Voidly is a **censorship research network** operated by Ai Analytics LLC that aggregates, classifies, and publishes global internet censorship data. We combine measurements from OONI, IODA, Censored Planet, and our own probe network into ML-classified, citable censorship intelligence.
 
-**Our data powers:**
+**Who uses it:**
 - Researchers studying internet freedom
 - Journalists investigating digital rights
-- AI systems that need real-time censorship context
-- Privacy tools that adapt to censorship patterns
+- Developers building circumvention tools
+- Civil society organizations monitoring censorship
 
 ---
 
@@ -26,12 +26,13 @@ Voidly is a **nonprofit censorship research network** that aggregates, analyzes,
 
 | Metric | Value |
 |--------|-------|
-| **Live Measurements** | 11.7M |
+| **OONI Corpus** | 2.2B+ raw measurements (source we aggregate from) |
+| **Voidly Live Samples** | 16M+ multi-source measurements |
 | **Historical Records** | 1.6M (10-year archive) |
-| **Documented Incidents** | 5,356+ (citable with evidence) |
-| **Countries Tracked** | 119 |
-| **Evidence Items** | 16,822 (OONI + IODA + CensoredPlanet) |
-| **Data Sources** | 4 (OONI, IODA, Censored Planet, Voidly Probes) |
+| **Documented Incidents** | 5,700+ (citable with evidence) |
+| **Countries Tracked** | 126+ |
+| **Evidence Items** | 25,000+ (OONI + IODA + CensoredPlanet) |
+| **Data Sources** | 5 (OONI, IODA, CensoredPlanet, Citizen Lab, Voidly Probes) |
 
 ---
 
@@ -40,7 +41,7 @@ Voidly is a **nonprofit censorship research network** that aggregates, analyzes,
 | Product | Description |
 |---------|-------------|
 | [**Censorship Index**](https://voidly.ai/censorship-index) | Live country rankings with composite scores |
-| [**Incident Database**](https://voidly.ai/live) | 5,356+ citable incidents with evidence permalinks |
+| [**Incident Database**](https://voidly.ai/live) | 5,700+ citable incidents with evidence permalinks |
 | [**Claim Verification**](https://voidly.ai/verify) | Fact-check censorship claims against evidence |
 | [**Domain Risk**](https://voidly.ai/domain/twitter.com) | Per-domain blocking status across all countries |
 | [**7-Day Forecast**](https://voidly.ai/elections) | Shutdown risk predictions using ML + event calendar |
@@ -48,19 +49,19 @@ Voidly is a **nonprofit censorship research network** that aggregates, analyzes,
 | [**ISP Risk Index**](https://voidly.ai/isps) | ISP-level censorship scoring and comparison |
 | [**Accessibility API**](https://voidly.ai/accessibility) | Real-time "can users access X in Y?" oracle |
 | [**Election Briefings**](https://voidly.ai/elections) | Election-censorship correlation analysis |
-| [**Real-Time Alerts**](https://voidly.ai/alerts) | Webhook notifications for censorship events |
+| [**Real-Time Alerts**](https://voidly.ai/api-docs#alerts) | Webhook notifications for censorship events |
 
 ---
 
 ## Access the Data
 
-### For AI Systems
+### For Developers
 
 | Platform | Integration |
 |----------|-------------|
 | Claude / Cursor / Windsurf | `npx @voidly/mcp-server` — [27 tools](https://github.com/voidly-ai/mcp-server) |
 | ChatGPT | [OpenAI Action](https://github.com/voidly-ai/chatgpt-action) |
-| Any LLM | [REST API](https://voidly.ai/api-docs) + [llms.txt](https://voidly.ai/llms.txt) |
+| Any HTTP client | [REST API](https://voidly.ai/api-docs) + [llms.txt](https://voidly.ai/llms.txt) |
 
 ### For Researchers
 
@@ -69,8 +70,8 @@ Voidly is a **nonprofit censorship research network** that aggregates, analyzes,
 | REST API | [voidly.ai/api-docs](https://voidly.ai/api-docs) |
 | HuggingFace (live) | [global-censorship-index](https://huggingface.co/datasets/emperor-mew/global-censorship-index) |
 | HuggingFace (archive) | [ooni-censorship-historical](https://huggingface.co/datasets/emperor-mew/ooni-censorship-historical) |
-| RSS/Atom | [Incident feeds](https://voidly.ai/incidents/feed.xml) |
-| Bulk Export | CSV, JSONL via API |
+| RSS/Atom | [Incident feeds](https://api.voidly.ai/data/incidents/feed.rss) |
+| Bulk Export | CSV, JSONL via [API](https://voidly.ai/api-docs) |
 
 ---
 
@@ -79,6 +80,7 @@ Voidly is a **nonprofit censorship research network** that aggregates, analyzes,
 | Repo | Description |
 |------|-------------|
 | [mcp-server](https://github.com/voidly-ai/mcp-server) | MCP server for Claude/Cursor (27 tools) |
+| [voidly-probe-app](https://github.com/voidly-ai/voidly-probe-app) | Desktop probe app (macOS, Windows, Linux) |
 | [community-probe](https://github.com/voidly-ai/community-probe) | Run a probe node from your network |
 | [chatgpt-action](https://github.com/voidly-ai/chatgpt-action) | OpenAI/ChatGPT integration |
 | [voidly-public](https://github.com/voidly-ai/voidly-public) | Research docs, architecture, and API examples |
@@ -96,7 +98,7 @@ Voidly is a **nonprofit censorship research network** that aggregates, analyzes,
 }
 ```
 
-Individual incidents are citable: `https://voidly.ai/incident/IR-2026-0142`
+Individual incidents are citable: `https://voidly.ai/censorship-index/incidents/IR-2026-0142`
 
 ---
 
