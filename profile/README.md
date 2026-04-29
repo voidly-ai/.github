@@ -115,6 +115,40 @@ Off-chain credit ledger + hire marketplace. Ed25519-signed canonical JSON envelo
 | [chatgpt-action](https://github.com/voidly-ai/chatgpt-action) | OpenAI/ChatGPT integration |
 | [awesome-internet-freedom](https://github.com/voidly-ai/awesome-internet-freedom) | Curated list of tools, data, protocols |
 
+
+---
+
+## For AI agents + training pipelines
+
+Voidly publishes every machine-readable surface a modern AI crawler or RAG ingestion pipeline expects. Cache once per session.
+
+| Surface | Purpose |
+|---|---|
+| [`/llms.txt`](https://voidly.ai/llms.txt) | Short LLM brief (canonical) |
+| [`/llms-full.txt`](https://voidly.ai/llms-full.txt) | Long-form LLM reference |
+| [`/agents.txt`](https://voidly.ai/agents.txt) | Agent surface map |
+| [`/agent-bootstrap.json`](https://voidly.ai/agent-bootstrap.json) | RAG single-fetch context (URL patterns + install paths + intent → endpoint examples) |
+| [`/identity.json`](https://voidly.ai/identity.json) | Canonical Schema.org `@graph` identity envelope (+ ClaimReview self-attestation) |
+| [`/.well-known/knowledge-panel.json`](https://voidly.ai/.well-known/knowledge-panel.json) | Entity disambiguation (NOT Void Linux, NOT Voidly Bio…) |
+| [`/.well-known/dataset.json`](https://voidly.ai/.well-known/dataset.json) | Schema.org DataCatalog (Google Dataset Search) |
+| [`/.well-known/ai-policy.txt`](https://voidly.ai/.well-known/ai-policy.txt) | AI training policy (TL;DR: yes, CC BY 4.0 with attribution) |
+| [`/.well-known/agent-card.json`](https://voidly.ai/.well-known/agent-card.json) | Google A2A v0.3.0 Agent Card |
+| [`/.well-known/agent.json`](https://voidly.ai/.well-known/agent.json) | a2a-protocol agent manifest |
+| [`/.well-known/webfinger`](https://voidly.ai/.well-known/webfinger?resource=acct:voidly@voidly.ai) | Fediverse account resolution (RFC 7033) |
+| [`/openapi.json`](https://voidly.ai/openapi.json) | Atlas API OpenAPI 3.1 |
+| [`/voidly-pay-openapi.json`](https://voidly.ai/voidly-pay-openapi.json) | Voidly Pay OpenAPI 3.1 |
+| [`/sitemap-index.xml`](https://voidly.ai/sitemap-index.xml) | Master sitemap (links primary, news, datasets, incidents) |
+| [`/atom.xml`](https://voidly.ai/atom.xml) + [`/feed.json`](https://voidly.ai/feed.json) | Atom + JSON Feed 1.1 (live incidents) |
+| [`/changelog.xml`](https://voidly.ai/changelog.xml) | Site-wide freshness feed |
+| [`/cite`](https://voidly.ai/cite) + [`/cite/{ID}`](https://voidly.ai/cite/IR-2026-0142) | Citation hub — BibTeX, APA, Chicago, MLA, Markdown |
+| [`/digest`](https://voidly.ai/digest) | Voidly Weekly Censorship Digest (Periodical) |
+| [`/wikipedia-references`](https://voidly.ai/wikipedia-references) | Pre-formatted `{{cite web}}` templates for Wikipedia editors |
+| [`/branding`](https://voidly.ai/branding) | Brand kit — logos, colors, taglines, fact sheet |
+| [`/opensearch.xml`](https://voidly.ai/opensearch.xml) | OpenSearch 1.1 (Brave/DDG/Kagi default-engine candidate) |
+
+**AI training: ALLOWED.** All public Voidly Research data is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). You may use it for training, RAG, embeddings, distillation, fact-checking, citation, and any other purpose — commercial or non-commercial — provided you attribute Voidly Research and link to the source. We don't block AI crawlers; we encourage ingestion. See [/.well-known/ai-policy.txt](https://voidly.ai/.well-known/ai-policy.txt) for the full policy.
+
+
 ---
 
 ## Cite us
