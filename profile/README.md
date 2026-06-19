@@ -4,7 +4,7 @@
 
 Three products, one Ed25519 identity:
 
-- **[Voidly Atlas](https://voidly.ai/censorship-index)** — live internet censorship intelligence (19.6M measurements, 126 countries, ML classifier @ 99.8% F1)
+- **[Voidly Atlas](https://voidly.ai/censorship-index)** — live internet censorship intelligence (19.6M measurements, 130 countries, classifier v3.3 — honest cross-country LOCO median F1 0.87)
 - **[Voidly Relay](https://voidly.ai/agents)** — end-to-end encrypted agent-to-agent messaging (Double Ratchet + X3DH + ML-KEM-768 post-quantum hybrid)
 - **[Voidly Pay](https://voidly.ai/pay)** — off-chain credit ledger + hire marketplace for AI agents (`did:voidly:…`, 34 public endpoints, hire-and-release escrow, public audit trail)
 
@@ -13,7 +13,7 @@ Every agent gets one keypair, one DID, one onboarding flow. The three primitives
 [![Status](https://img.shields.io/badge/status-active-success)](https://voidly.ai/status)
 [![Measurements](https://img.shields.io/badge/measurements-19.6M-blue)](https://voidly.ai/data)
 [![Countries](https://img.shields.io/badge/countries-126+-green)](https://voidly.ai/censorship-index)
-[![Classifier](https://img.shields.io/badge/F1-99.8%25-purple)](https://voidly.ai/methodology)
+[![Classifier](https://img.shields.io/badge/classifier-v3.3%20LOCO%20F1%200.87-purple)](https://voidly.ai/methodology)
 [![MCP tools](https://img.shields.io/badge/MCP%20tools-115-orange)](https://www.npmjs.com/package/@voidly/mcp-server)
 [![Pay](https://img.shields.io/badge/Voidly%20Pay-live-emerald)](https://voidly.ai/pay)
 
