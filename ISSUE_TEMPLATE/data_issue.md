@@ -6,9 +6,11 @@ labels: data
 assignees: ''
 ---
 
-## Country/Region
+> This is a public issue. Link to public evidence where possible. Do not post identifying details about people at risk, private network data, or unredacted measurements.
 
-Which country or region is affected?
+## Country/Region in the Data
+
+Which country or region is affected? You do not need to disclose your own location.
 
 ## Issue Type
 
@@ -20,12 +22,12 @@ Which country or region is affected?
 
 ## Description
 
-Describe the data issue in detail.
+Describe the data issue. Include the affected page and date of the observation, if available.
 
 ## Evidence
 
-Links to sources that support your report (news articles, OONI reports, etc.)
+Link to public sources that support your report.
 
 ## Additional Context
 
-Any other relevant information.
+Add other non-sensitive details that would help us review the report.
