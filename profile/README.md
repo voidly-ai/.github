@@ -56,6 +56,7 @@ Both connectors are listed in the official **[MCP Registry](https://registry.mod
 | Repository | What it is |
 |---|---|
 | [`session`](https://github.com/voidly-ai/session) | Voidpay Sessions SDK and protocol: how an agent payment is requested, approved and recovered on the client side. |
+| [`atlas-mcp`](https://github.com/voidly-ai/atlas-mcp) | The Atlas MCP server: censorship data and forecasts inside any MCP client. |
 | [`pay-mcp`](https://github.com/voidly-ai/pay-mcp) | The Voidpay Marketplace MCP connector. |
 | [`cli`](https://github.com/voidly-ai/cli) | Command-line client for the Atlas research API. |
 | [`voidly-check-action`](https://github.com/voidly-ai/voidly-check-action) | GitHub Action: check whether a domain is reachable around the world. |
