@@ -28,7 +28,7 @@
 
 ### What we build
 
-| | |
+| Product | What it does |
 |---|---|
 | 🌍 **[Atlas](https://voidly.ai/atlas)** | The censorship observatory. 690,000+ evidence records from OONI, IODA, Censored Planet and our own probe network, distilled into dated, citable incidents across 130 countries. Every number links to its raw measurement. |
 | 📈 **[Shutdown Risk](https://voidly.ai/shutdown-risk)** | Seven-day forecasts of network shutdown risk, published with their accuracy so you can see how good they are. |
@@ -53,7 +53,7 @@ Both connectors are listed in the official **[MCP Registry](https://registry.mod
 
 ### Open source
 
-| Repository | |
+| Repository | What it is |
 |---|---|
 | [`session`](https://github.com/voidly-ai/session) | Voidpay Sessions SDK and protocol: how an agent payment is requested, approved and recovered on the client side. |
 | [`pay-mcp`](https://github.com/voidly-ai/pay-mcp) | The Voidpay Marketplace MCP connector. |
