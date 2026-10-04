@@ -1,25 +1,17 @@
 ## Summary
 
-Brief description of changes.
+What changed, and why?
 
-## Type of Change
+## Validation
 
-- [ ] Bug fix
-- [ ] New feature
-- [ ] Documentation update
-- [ ] Data update
+List the checks you ran, or explain why none apply.
 
 ## Checklist
 
-- [ ] I have read the [Contributing Guidelines](https://github.com/voidly-ai/voidly-public/blob/main/CONTRIBUTING.md)
-- [ ] I have tested my changes
-- [ ] I have updated documentation (if applicable)
-- [ ] No secrets or credentials are included
+- [ ] I followed this repository's contribution guidance, if any.
+- [ ] I updated relevant documentation, if needed.
+- [ ] I checked the diff for secrets, personal information, and sensitive network details.
 
 ## Related Issues
 
-Closes #
-
-## Additional Notes
-
-Any other context for reviewers.
+Link related issues, if any.
