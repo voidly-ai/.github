@@ -1,14 +1,16 @@
 ---
 name: Bug Report
-about: Report a bug or data issue
+about: Report a reproducible bug
 title: '[BUG] '
 labels: bug
 assignees: ''
 ---
 
+> This is a public issue. Redact credentials, personal information, and sensitive network details from logs or screenshots. For a suspected vulnerability, follow the [security policy](https://github.com/voidly-ai/.github/blob/main/SECURITY.md).
+
 ## Description
 
-A clear description of the bug.
+What went wrong?
 
 ## Steps to Reproduce
 
@@ -18,18 +20,18 @@ A clear description of the bug.
 
 ## Expected Behavior
 
-What you expected to happen.
+What did you expect?
 
 ## Actual Behavior
 
-What actually happened.
+What happened instead?
 
 ## Environment
 
-- **Repository:** (e.g., mcp-server, voidly-public)
+- **Affected component or page:**
 - **Version:** (if applicable)
-- **OS:** (if relevant)
+- **OS/browser:** (if relevant)
 
 ## Additional Context
 
-Any other context, screenshots, or logs.
+Add redacted screenshots or logs if helpful.
