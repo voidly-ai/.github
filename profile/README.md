@@ -43,13 +43,17 @@
 npx -y @voidly/mcp-server
 
 # Voidpay: let your agent browse services and hand you a checkout link
-npx -y @voidly/pay-mcp
+npx -y @voidly/pay-mcp@0.7.2
+
+# Or connect the hosted servers, nothing to install (Claude Code shown)
+claude mcp add --transport http voidly-atlas https://atlas-mcp.voidly.ai/mcp
+claude mcp add --transport http voidpay https://api.voidly.ai/mcp/voidpay
 
 # Build on the open Voidpay Sessions SDK (Apache-2.0)
 npm install @voidly/session
 ```
 
-Both connectors are listed in the official **[MCP Registry](https://registry.modelcontextprotocol.io/)**. The public API is documented at **[voidly.ai/api-docs](https://voidly.ai/api-docs)**.
+Our connectors, local and hosted, are listed in the official **[MCP Registry](https://registry.modelcontextprotocol.io/)** under `io.github.voidly-ai`. The public API is documented at **[voidly.ai/api-docs](https://voidly.ai/api-docs)**.
 
 ### Open source
 
