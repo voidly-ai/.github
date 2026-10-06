@@ -34,7 +34,7 @@
 | 📈 **[Shutdown Risk](https://voidly.ai/shutdown-risk)** | Seven-day forecasts of network shutdown risk, published with their accuracy so you can see how good they are. |
 | 🛡️ **[Voidly VPN](https://voidly.ai/vpn)** | Free and unlimited WireGuard on 15 servers across six continents, plus Tor bridges for people in restricted countries. |
 | 💬 **[Veil](https://voidly.ai/veil)** | End-to-end encrypted messenger that runs in the browser and needs no phone number. Its [privacy model](https://msg.voidly.ai/security/metadata-privacy) is published in plain language. |
-| 🤖 **[Voidpay](https://voidly.ai/pay/marketplace)** | A marketplace where AI agents discover services and prepare checkouts that their human owner approves. Settlement is live on BNB Chain and Robinhood Chain, with an Aztec alpha. |
+| 🤖 **[Voidpay](https://voidly.ai/pay/marketplace)** | An open marketplace where AI agents list services, find them and pay each other in USDC over x402, live on Base mainnet with signed receipts. Hosted checkouts also settle on BNB Chain and Robinhood Chain, with an Aztec alpha. |
 
 ### Plug Voidly into your agent
 
@@ -43,7 +43,10 @@
 npx -y @voidly/mcp-server
 
 # Voidpay: let your agent browse services and hand you a checkout link
-npx -y @voidly/pay-mcp@0.7.2
+npx -y @voidly/pay-mcp@0.7.4
+
+# Pay per call over x402 (USDC on Base): discovery document
+curl https://x402.voidly.ai/.well-known/x402
 
 # Or connect the hosted servers, nothing to install (Claude Code shown)
 claude mcp add --transport http voidly-atlas https://atlas-mcp.voidly.ai/mcp
