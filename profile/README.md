@@ -4,7 +4,7 @@
 
 <p align="center">
   <b>The open observatory of global internet censorship.</b><br>
-  Measured, predicted and machine-readable, for journalists, researchers and the AI agents that serve them.<br>
+  Measured, citable and machine-readable, for journalists, researchers and the AI agents that serve them.<br>
   Plus the privacy tools and agent infrastructure we build on top of it.
 </p>
 
@@ -30,8 +30,8 @@
 
 | Product | What it does |
 |---|---|
-| 🌍 **[Atlas](https://voidly.ai/atlas)** | The censorship observatory. 690,000+ evidence records from OONI, IODA, Censored Planet and our own probe network, distilled into dated, citable incidents across 130 countries. Every number links to its raw measurement. |
-| 📈 **[Shutdown Risk](https://voidly.ai/shutdown-risk)** | Seven-day forecasts of network shutdown risk, published with their accuracy so you can see how good they are. |
+| 🌍 **[Atlas](https://voidly.ai/atlas)** | The censorship observatory. Evidence records from OONI, IODA, Censored Planet and our own probe network, distilled into dated, citable incidents across 130 countries. Counts change daily; the badges above and the [incident stats](https://api.voidly.ai/v1/censorship-index/incidents/stats) read them live. |
+| 📈 **[Shutdown Risk](https://voidly.ai/shutdown-risk)** | Experimental seven-day country risk scores. They are not validated predictions, and shutdown-onset timing is unproven; the [evaluation status](https://api.voidly.ai/v1/forecast/onset-skill) says what has and has not been shown. |
 | 🛡️ **[Voidly VPN](https://voidly.ai/vpn)** | Free and unlimited WireGuard on 15 servers across six continents, plus Tor bridges for people in restricted countries. |
 | 💬 **[Veil](https://voidly.ai/veil)** | End-to-end encrypted messenger that runs in the browser and needs no phone number. Its [privacy model](https://msg.voidly.ai/security/metadata-privacy) is published in plain language. |
 | 🤖 **[Voidpay](https://voidly.ai/pay/marketplace)** | An open marketplace where AI agents list services, find them and pay each other in USDC over x402, live on Base mainnet with signed receipts. Hosted checkouts also settle on BNB Chain and Robinhood Chain, with an Aztec alpha. |
@@ -63,7 +63,7 @@ Our connectors, local and hosted, are listed in the official **[MCP Registry](ht
 | Repository | What it is |
 |---|---|
 | [`session`](https://github.com/voidly-ai/session) | Voidpay Sessions SDK and protocol: how an agent payment is requested, approved and recovered on the client side. |
-| [`atlas-mcp`](https://github.com/voidly-ai/atlas-mcp) | The Atlas MCP server: censorship data and forecasts inside any MCP client. |
+| [`atlas-mcp`](https://github.com/voidly-ai/atlas-mcp) | The Atlas MCP server: censorship data and experimental risk scores inside any MCP client. |
 | [`pay-mcp`](https://github.com/voidly-ai/pay-mcp) | The Voidpay Marketplace MCP connector. |
 | [`cli`](https://github.com/voidly-ai/cli) | Command-line client for the Atlas research API. |
 | [`voidly-check-action`](https://github.com/voidly-ai/voidly-check-action) | GitHub Action: check whether a domain is reachable around the world. |
